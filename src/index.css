@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  direction: rtl;
+  font-family: 'vazir' !important;
+}
+.sidebar{
+  width: 300px;
+  height:100vh;
+  position: fixed;
+  z-index:1000;
+  padding: 50px 0;
+  background: purple;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.sidebar .sidebar-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.sidebar .sidebar-header img{
+  width: 100px;
+}
+
+.sidebar .sidebar-header .close-btn{
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: rgb(102, 1, 102);
+  color: #fff;
+  font-size: 30px;
+  border: none;
+}
+
+.sidebar .links{
+  padding: 0 20px;
+}
+
+.sidebar .links li{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .links li a{
+  color: #fff;
+  display: flex;
+ align-items: center;
+ font-style: 18px;
+ text-decoration: none;
+}
+
+.sidebar .links li a svg{
+  margin-left: 10px;
+}
+
+
+.sidebar-toggle{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background: purple;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: 30px;
+  cursor: pointer;
+}
+
+
+.show-sidebar{
+  transform: translateX(0%) ;
+  -webkit-transform: translateX(0%) ;
+  -moz-transform: translateX(0%) ;
+  -ms-transform: translateX(0%) ;
+  -o-transform: translateX(0%) ;
+}
